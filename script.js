@@ -8,6 +8,7 @@ function fillUpDetails(datas) {
     document.querySelector('.humidity').innerHTML = `humidity: ${datas.main.humidity}%`;
     document.querySelector('.weather__img').src = `https://openweathermap.org/img/wn/${datas.weather[0].icon}.png`
 
+
 }
 
 async function searchCity(city) {
@@ -18,6 +19,14 @@ async function searchCity(city) {
 
 function searchButton() {
     const city = document.querySelector('.input__city').value;
+    
+    searchCity(city);
+    clear();
+}
 
-    searchCity(city)    
+
+
+function clear() {
+    const city = document.querySelector('#input__city').value = '';
+    console.log(city);
 }
