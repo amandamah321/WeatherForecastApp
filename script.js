@@ -24,9 +24,19 @@ function searchButton() {
     clear();
 }
 
-
-
 function clear() {
+
     const city = document.querySelector('#input__city').value = '';
-    console.log(city);
+
 }
+
+
+
+function keyEnter() {
+    let input = document.querySelector('input');
+
+    if(input.key === 'Enter'){
+        console.log('teste');
+    }
+}
+

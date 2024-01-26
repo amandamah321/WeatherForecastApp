@@ -4,13 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather Forecast</title>
-    <link rel="stylesheet" href="/WeatherForecastApp/styles.css">
-    <script src="/WeatherForecastApp/script.js"></script>
+    <link rel="stylesheet" href="/styles.css">
+    <script src="/script.js"></script>
 </head>
 <body>
     <div class="container">
 
-        <input id="input__city" class="input__city" placeholder="City">
+        <input id="input__city" class="input__city" placeholder="City" onkeypress="keyEnter()">
         <button class="button__search" onclick="searchButton()">
             <img class="img__search" src="https://www.svgrepo.com/show/488200/find.svg" alt="lupa">
         </button>
