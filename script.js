@@ -1,5 +1,5 @@
 
-const key = ""
+const key = "880629a0a85cf17bc03a40895e0aec6e"
 
 function fillUpDetails(datas) {
     document.querySelector('.city').innerHTML = datas.name;
