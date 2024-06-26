@@ -12,14 +12,18 @@ body {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    background-color: rgb(154, 189, 231);
+    background-image: url("./assets/bg.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     user-select: none;
 }
 
 .container {
-    width: 50%;
+    width: 40rem;
+    min-width: 40rem    ;
     min-width: 20rem;
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.812);
     border-radius: 25px;
     padding: 40px;
     box-shadow: 5px 5px 5px rgb(53, 53, 53);
@@ -39,6 +43,7 @@ body {
     border-radius: 10px;
     font-size: 20px;
     background-color: #c8c7c7;
+    border: 1px solid black;
     color: black;
     width: calc(100% - 70px);
 }
@@ -59,7 +64,7 @@ body {
     background-color: #c8c7c7;
     cursor: pointer;
     float: right;
-    border: #7c7c7c2b;
+    border: 1px solid black;
 }
 
 .button__search:hover {
@@ -81,22 +86,24 @@ body {
 }
 
 .degree {
-    font-size: 20px;
+    font-size: 2rem;
     margin-top: 10px;
 }
 
 .top_box {
     display: flex;
-    align-items: center;
+    align-items: baseline;
     justify-content: space-between;
     margin-right: 5px;
 }
 
 .bottom_box {
     display: flex;
-    margin-top: 10px;
+    margin-top: 1.5rem;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
 }
 
 .bottom__box--align {

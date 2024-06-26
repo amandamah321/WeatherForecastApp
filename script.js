@@ -4,12 +4,18 @@ function fillUpDetails(datas) {
   document.querySelector(".city").innerHTML = datas.name;
   document.querySelector(".degree").innerHTML = `${datas.main.temp.toFixed(
     0
-  )}ºc`;
+  )}ºC`;
   document.querySelector(".weather__text").innerHTML =
     datas.weather[0].description.toLowerCase();
   document.querySelector(
     ".humidity"
   ).innerHTML = `Humidity: ${datas.main.humidity}%`;
+  document.querySelector(
+    ".max-temp"
+  ).innerHTML = `Max: ${datas.main.temp_max}º`;
+  document.querySelector(
+    ".min-temp"
+  ).innerHTML = `Min: ${datas.main.temp_min}º`;
 
   document.querySelector(
     ".img_container"
